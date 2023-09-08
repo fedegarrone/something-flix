@@ -1,0 +1,34 @@
+header {
+  height: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.2rem solid var(--color-sec);
+}
+
+header > section {
+  scale: 2;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+  border-style: solid;
+  border-color: var(--color-sec);
+  border-width: 0.1rem 0 0 0.1rem;
+  border-radius: 0.5rem;
+  transition: 0.1s ease-in-out;
+}
+
+header > section:hover {
+  border-color: var(--color-pri);
+  border-width: 0 0.2rem 0.2rem 0;
+  border-radius: 0.5rem;
+}
+
+header > section:hover > h1 {
+  color: var(--color-sec);
+}
+
+header > section > h1 {
+  color: var(--color-pri);
+}
