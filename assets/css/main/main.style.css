@@ -1,0 +1,59 @@
+main {
+  height: 50%;
+  box-sizing: border-box;
+  border: 0.2rem solid var(--color-sec);
+  background-image: url(https://st3.depositphotos.com/32490888/33836/i/450/depositphotos_338368924-stock-photo-empty-spot-lit-dark-background.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1rem;
+  grid-template-areas:
+    "a b b"
+    "c c d"
+    "e f d";
+}
+
+main > article {
+  border-width: 0 0.2rem 0.2rem 0;
+  border-style: solid;
+  border-color: var(--color-sec);
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease-in-out;
+  filter: grayscale(0.5);
+}
+
+main > article:hover {
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
+
+main > article:nth-child(1) {
+  grid-area: a;
+  background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/copesa/OBF7SB7TWVGMRLV6274TS2NJYU.jpg);
+}
+main > article:nth-child(2) {
+  grid-area: b;
+  background-image: url(https://culturageek.com.ar/wp-content/uploads/2022/12/Image-11-Spider-Man_-Across-the-Spider-Verse-1384x580-1.jpg);
+}
+main > article:nth-child(3) {
+  grid-area: c;
+  background-image: url(https://static.euronews.com/articles/stories/07/51/45/54/1440x810_cmsv2_d794baf9-5913-5e00-ab52-461ab3b4b56f-7514554.jpg);
+}
+main > article:nth-child(4) {
+  grid-area: d;
+  background-image: url(https://revistasietearteshome.files.wordpress.com/2023/07/mv5bmdbmytzjnjutn2m1ms00mtq2ltk2odgtnzc2m2qyzge5ntvjxkeyxkfqcgdeqxvynzawmju2mty40._v1_.jpg);
+}
+main > article:nth-child(5) {
+  grid-area: e;
+  background-image: url(https://pics.filmaffinity.com/Flash-205686824-large.jpg);
+}
+main > article:nth-child(6) {
+  grid-area: f;
+  background-image: url(https://i.blogs.es/b7ce67/bluebeetle/375_375.jpeg);
+}

@@ -1,3 +1,5 @@
+@import url(nav.style.css);
+
 header {
   height: 50%;
   box-sizing: border-box;
@@ -5,6 +7,9 @@ header {
   flex-direction: column;
   justify-content: center;
   border: 0.2rem solid var(--color-sec);
+  background-image: url(https://st3.depositphotos.com/32490888/33836/i/450/depositphotos_338368924-stock-photo-empty-spot-lit-dark-background.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 header > section {
@@ -22,13 +27,12 @@ header > section {
 header > section:hover {
   border-color: var(--color-pri);
   border-width: 0 0.2rem 0.2rem 0;
-  border-radius: 0.5rem;
 }
 
-header > section:hover > h1 {
+header > section:hover h1 {
   color: var(--color-sec);
 }
 
-header > section > h1 {
+header > section h1 {
   color: var(--color-pri);
 }
