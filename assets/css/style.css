@@ -1,13 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:ital@0;1&display=swap");
-@import url(header/header.style.css);
-@import url(main/main.style.css);
-
 :root {
   --font-common: "Kanit", sans-serif;
   --color-bg: #1a1a1a;
   --color-inv: #f5f5f5;
-  --color-pri: #4b0082;
-  --color-sec: #ffd700;
+  --color-pri: #7538a1;
+  --color-sec: #4fe9e9;
 }
 
 *,
@@ -20,7 +16,6 @@ html {
 }
 
 body {
-  height: 200svh;
   box-sizing: border-box;
   background-color: var(--color-bg);
   overflow-x: hidden;

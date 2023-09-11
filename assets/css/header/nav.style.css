@@ -18,9 +18,17 @@ nav {
 
 nav:hover {
   width: 7rem;
-  height: 5.5rem;
+  height: 7.5rem;
   border-color: var(--color-pri);
   border-width: 0 0.2rem 0.2rem 0;
+}
+
+.nav-index:hover {
+  height: 7.5rem;
+}
+
+.nav-register:hover {
+  height: 5.5rem;
 }
 
 nav:hover > div:nth-child(1) {

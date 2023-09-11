@@ -1,22 +1,31 @@
 @import url(nav.style.css);
 
 header {
-  height: 50%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   border: 0.2rem solid var(--color-sec);
   background-image: url(https://st3.depositphotos.com/32490888/33836/i/450/depositphotos_338368924-stock-photo-empty-spot-lit-dark-background.jpg);
   background-position: center;
   background-size: cover;
 }
 
-header > section {
+header > .logo {
   scale: 2;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0.5rem;
+}
+
+header > .logo-mini {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  padding: 0.5rem;
+}
+
+header > .logo,
+header > .logo-mini {
   border-style: solid;
   border-color: var(--color-sec);
   border-width: 0.1rem 0 0 0.1rem;
@@ -24,15 +33,19 @@ header > section {
   transition: 0.1s ease-in-out;
 }
 
-header > section:hover {
+header > .logo:hover,
+header > .logo-mini:hover {
   border-color: var(--color-pri);
   border-width: 0 0.2rem 0.2rem 0;
 }
 
-header > section:hover h1 {
-  color: var(--color-sec);
+header > .logo h1,
+header > .logo-mini h1 {
+  transition: 0.3s ease-in-out;
+  color: var(--color-pri);
 }
 
-header > section h1 {
-  color: var(--color-pri);
+header > .logo:hover h1,
+header > .logo-mini:hover h1 {
+  color: var(--color-sec);
 }

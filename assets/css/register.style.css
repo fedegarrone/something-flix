@@ -1,0 +1,92 @@
+@import url(style.css);
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital@0;1&display=swap");
+@import url(header/header.style.css);
+@import url(main/main.style.css);
+
+body {
+  height: 100svh;
+}
+
+header {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "a a" "b c" "d e" "f g" "h i" "j j";
+  width: 50%;
+  padding: 1rem;
+  background-color: var(--color-sec);
+  border-radius: 1.5rem;
+  border-style: solid;
+  border-color: var(--color-pri);
+  border-width: 0 0.2rem 0.2rem 0;
+  color: var(--color-pri);
+}
+
+form > div > h2 {
+  text-align: center;
+}
+
+form > div:nth-child(even) {
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+form > div:nth-child(1) {
+  grid-area: a;
+  background-color: var(--color-pri);
+  color: var(--color-sec);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+form > div:nth-child(2) {
+  grid-area: b;
+}
+form > div:nth-child(3) {
+  grid-area: c;
+}
+form > div:nth-child(4) {
+  grid-area: d;
+}
+form > div:nth-child(5) {
+  grid-area: e;
+}
+form > div:nth-child(6) {
+  grid-area: f;
+}
+form > div:nth-child(7) {
+  grid-area: g;
+}
+form > div:nth-child(8) {
+  grid-area: h;
+}
+form > div:nth-child(9) {
+  grid-area: i;
+}
+form > div:nth-child(10) {
+  grid-area: j;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+form button {
+  background-color: var(--color-pri);
+  color: var(--color-sec);
+  width: 5rem;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  font-weight: initial;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background-color: var(--color-sec);
+  color: var(--color-pri);
+}

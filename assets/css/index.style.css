@@ -1,0 +1,16 @@
+@import url(style.css);
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital@0;1&display=swap");
+@import url(header/header.style.css);
+@import url(main/main.style.css);
+
+body {
+  height: 200svh;
+}
+
+header {
+  height: 50%;
+}
+
+main {
+  height: 50%;
+}
